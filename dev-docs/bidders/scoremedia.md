@@ -1,10 +1,12 @@
 ---
 layout: bidder
-title: Sportplatz Media
-description: Prebid spm Bidder Adapter
+title: scoremedia
+description: Prebid scoremedia Bidder Adapter
 pbjs: true
-biddercode: spm
-gvl_id: 965
+pbs: true
+biddercode: scoremedia
+aliasCode: nexx360
+gvl_id: 1090
 tcfeu_supported: true
 usp_supported: true
 gpp_supported: true
@@ -12,7 +14,6 @@ schain_supported: true
 dchain_supported: false
 floors_supported: true
 userIds: all
-tcfeu_supported: true
 media_types: banner, video, native
 safeframes_ok: true
 deals_supported: true
@@ -22,14 +23,14 @@ multiformat_supported: will-bid-on-any
 
 ---
 
-### Bid Params
+## Bid Params
 
 {: .table .table-bordered .table-striped }
 | Name          | Scope    | Description                | Example                                   | Type      |
 |---------------|----------|----------------------------|--------------------------------------     |-----------|
-| `tagId`       | required | tag ID                     | `"n1x53vta"`                             | `string`  |
+| `tagId`       | required | tag ID                     | `"795dtj21"`                              | `string`  |
 
-### First Party Data
+## First Party Data
 
 Publishers should use the `ortb2` method of setting [First Party Data](/features/firstPartyData.html).
 The following fields are supported:
@@ -39,7 +40,7 @@ The following fields are supported:
 * ortb2.user.ext.data.*
 * ortb2.user.data[]
 
-### Test Parameters
+## Test Parameters
 
 ```javascript
 var adUnits = [
@@ -52,9 +53,9 @@ var adUnits = [
         }
       },
       bids: [{
-         bidder: 'spm',
+         bidder: 'scoremedia',
          params: {
-            tagId: 'n1x53vta'
+            tagId: '795dtj21'
          }
        }]
    },
@@ -68,9 +69,9 @@ var adUnits = [
             }
         },
         bids: [{
-            bidder: 'spm',
+            bidder: 'scoremedia',
             params: {
-               tagId: 'n1x53vta'
+               tagId: '795dtj21'
             }
         }]
     },
@@ -91,9 +92,9 @@ var adUnits = [
             }
         },
         bids: [{
-            bidder: 'spm',
+            bidder: 'scoremedia',
             params: {
-               tagId: 'n1x53vta'
+               tagId: '795dtj21'
             }
         }]
     },
@@ -110,10 +111,10 @@ var adUnits = [
             }
         },
         bids: [{
-            bidder: 'spm',
+            bidder: 'scoremedia',
             params: {
-               tagId: 'n1x53vta',
-               videoTagId: 'n1x53vta'
+               tagId: '795dtj21',
+               videoTagId: 'testscore'
             }
         }]
     };

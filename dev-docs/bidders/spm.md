@@ -1,9 +1,10 @@
 ---
 layout: bidder
-title: scoremedia
-description: Prebid scoremedia Bidder Adapter
+title: Sportplatz Media
+description: Prebid spm Bidder Adapter
 pbjs: true
-biddercode: scoremedia
+biddercode: spm
+aliasCode: nexx360
 gvl_id: 965
 tcfeu_supported: true
 usp_supported: true
@@ -27,7 +28,7 @@ multiformat_supported: will-bid-on-any
 {: .table .table-bordered .table-striped }
 | Name          | Scope    | Description                | Example                                   | Type      |
 |---------------|----------|----------------------------|--------------------------------------     |-----------|
-| `tagId`       | required | tag ID                     | `"795dtj21"`                             | `string`  |
+| `tagId`       | required | tag ID                     | `"n1x53vta"`                             | `string`  |
 
 ### First Party Data
 
@@ -52,9 +53,9 @@ var adUnits = [
         }
       },
       bids: [{
-         bidder: 'scoremedia',
+         bidder: 'spm',
          params: {
-            tagId: '795dtj21'
+            tagId: 'n1x53vta'
          }
        }]
    },
@@ -68,9 +69,9 @@ var adUnits = [
             }
         },
         bids: [{
-            bidder: 'scoremedia',
+            bidder: 'spm',
             params: {
-               tagId: '795dtj21'
+               tagId: 'n1x53vta'
             }
         }]
     },
@@ -91,9 +92,9 @@ var adUnits = [
             }
         },
         bids: [{
-            bidder: 'scoremedia',
+            bidder: 'spm',
             params: {
-               tagId: '795dtj21'
+               tagId: 'n1x53vta'
             }
         }]
     },
@@ -110,10 +111,10 @@ var adUnits = [
             }
         },
         bids: [{
-            bidder: 'scoremedia',
+            bidder: 'spm',
             params: {
-               tagId: '795dtj21',
-               videoTagId: 'testscore'
+               tagId: 'n1x53vta',
+               videoTagId: 'n1x53vta'
             }
         }]
     };
